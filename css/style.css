@@ -1,0 +1,753 @@
+:root {
+  --main-color: #212121;
+  --web-color: #2196f3;
+  --link-color: #2196f3;
+  --black: #000000;
+  --inactive-link: #212121;
+  --inactive-link2: #757575;
+  --main-section: #2f303a;
+  --white: #ffffff;
+  --details-color: #757575;
+  --our-team: #f5f4fa;
+  --footer-color: #2f303a;
+  --footer-color-contact: rgba(100%, 100%, 100%, 60%);
+  --color-buton-focus: #0190ec;
+  --svg-fill-white_bg: #afb1b8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+/*---------------Header-----------------------*/
+.logo-link {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 3%;
+}
+.logo-web {
+  color: var(--web-color);
+}
+.logo-studio {
+  color: var(--black);
+}
+/* Header Navigation */
+
+.global-header .main-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 2%;
+  color: var(--inactive-link);
+}
+.global-header .main-nav a {
+  text-decoration: none;
+}
+.current {
+  color: var(--link-color);
+  padding-bottom: 30px;
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+}
+.main-nav-ul a:active,
+.main-nav-ul a:hover,
+.main-nav-ul a:focus,
+.main-nav-ul a:visited:active,
+.main-nav-ul a:visited:hover,
+.main-nav-ul a:visited:focus {
+  color: var(--link-color);
+}
+
+.global-header-contact a[href^="mailto"],
+.global-header-contact a[href^="tel"] {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 2%;
+  color: var(--inactive-link2);
+}
+.global-header-contact a {
+  text-decoration: none;
+}
+
+.global-header-contact a:active,
+.global-header-contact a:hover,
+.global-header-contact a:focus,
+.global-header-contact a:visited:active,
+.global-header-contact a:visited:hover,
+.global-header-contact a:visited:focus {
+  color: var(--link-color);
+}
+.global-header-contact a:visited {
+  color: var(--inactive-link2);
+}
+
+/*-------------------------------------Main---------------------*/
+.main {
+  background-color: var(--main-section);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 6%;
+  text-align: center;
+  color: var(--white);
+}
+.main-buton {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 6%;
+  color: var(--white);
+  background-color: var(--web-color);
+  border: none;
+  cursor: pointer;
+}
+.main-buton:hover {
+  background-color: var(--color-buton-focus);
+}
+.main-skil {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 3%;
+  padding-top: 30px;
+  color: var(--main-color);
+}
+.main-skil-details {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 3%;
+  color: var(--details-color);
+}
+.main-what-we-do {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--main-color);
+}
+.main-background {
+  background-color: var(--our-team);
+}
+.main-our-team {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--main-color);
+}
+.main-our-team-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--main-color);
+}
+.main-our-team-name-job {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 3%;
+  text-align: center;
+  color: var(--details-color);
+}
+/* ----------------------------------- Portfolio-main -----------------------------------*/
+.button-list button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 3%;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+.button-list button:hover,
+.button-list button:active,
+.button-list button:focus {
+  color: var(--white);
+  background-color: var(--link-color);
+}
+.main-title-images {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 6%;
+  color: var(--main-color);
+}
+.main-title-images-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  color: var(--details-color);
+}
+/* ---------------------- Footer --------------------*/
+.global-footer {
+  background-color: var(--footer-color);
+}
+.logo-link {
+  text-decoration: none;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 3%;
+}
+.logo-web-footer {
+  color: var(--web-color);
+}
+.logo-studio-footer {
+  color: var(--white);
+}
+.address span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  font-style: normal;
+}
+.footer-adress {
+  color: var(--white);
+}
+
+.address a[href^="mailto"],
+.address a[href^="tel"] {
+  color: var(--footer-color-contact);
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
+}
+.address a {
+  text-decoration: none;
+}
+.address a:active,
+.address a:hover,
+.address a:focus,
+.address a:visited:active,
+.address a:visited:hover,
+.address a:visited:focus {
+  color: var(--link-color);
+}
+.address a:visited {
+  color: var(--inactive-link2);
+}
+/* ---------------------- Tema 3 --------------------*/
+/* ---------------------- Header --------------------*/
+body {
+  margin: 0;
+}
+
+.global-header-container {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+}
+.global-header {
+  border-bottom: 1px;
+  border: 1px solid #ececec;
+}
+.main-nav ul li {
+  padding: 32px 0px;
+}
+.global-header-contact li {
+  padding: 32px 0px;
+}
+.global-header .logo-link {
+  padding: 24px 93px 25px 215px;
+}
+.logo {
+  margin: 0;
+}
+.global-header .main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 259px;
+  padding: 0px 330px 0px 0px;
+  margin: 0px;
+}
+.global-header .global-header-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+.global-header-container {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+}
+.global-header {
+  border-bottom: 1px;
+  border: 1px solid #ececec;
+}
+/* ---------------------- Main --------------------*/
+.main {
+  width: 1600 px;
+  height: 600 px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
+}
+.main-title {
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+/* ---------------------- skill --------------------*/
+.main-section-skil {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 94px 0px 94px 0px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-skil {
+  margin: 0px;
+  padding: 0px;
+}
+.main-skil-details {
+  margin: 0px;
+  padding-top: 10px;
+}
+/* ---------------------- What we do --------------------*/
+.main-what-we-do {
+  margin: 0;
+  padding-bottom: 50px;
+}
+.main-what-we-do-images {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin: 0 auto;
+  padding: 0px 0px 94px 0px;
+  width: 1200px;
+}
+/* ---------------------- Our team --------------------*/
+.main-our-team {
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.main-our-team-description {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 0px 94px 0px;
+  margin: 0 auto;
+  width: 1200px;
+}
+.main-our-team-description li {
+  background-color: #ffffff;
+}
+
+/* ---------------------- Footer --------------------*/
+.logo-footer {
+  padding: 60px 0px 28px 215px;
+  margin: 0 auto;
+}
+.global-footer-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72px;
+  margin: 0px;
+  padding: 0px 0px 60px 215px;
+  margin: 0 auto;
+}
+/* ---------------------- Portofolio --------------------*/
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 62px 0px 50px 0px;
+  margin: 0 auto;
+}
+.button-list li button {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.images-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0px 0px 94px 0px;
+  margin: 0 auto;
+  width: 1200px;
+}
+.images-list li {
+  border: 1px solid #eeeeee;
+  padding: 0px 0px 0px 0px;
+}
+.images-text {
+  padding: 20px 24px;
+}
+.images-text h3,
+.images-text p {
+  margin: 0;
+}
+
+.main-title-images {
+  padding: 0px 0px 4px 0px;
+}
+/* ---------------------- Observatie--------------------*/
+.main-what-we-do-images li img,
+.main-our-team-description li img,
+.images-list li img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ---------------------- tema 4--------------------*/
+/* ---------------------- our icons--------------------*/
+.main-section-skil-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.main-section-skil-icon svg {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+}
+.main-skil {
+  padding-top: 30px;
+}
+/* ---------------------- header contact--------------------*/
+.global-header-contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  padding-right: 40px;
+}
+.global-header-contact-item svg {
+  width: 16px;
+  height: 12px;
+}
+.global-header-contact-item:hover {
+  color: rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
+}
+/* ---------------------- hero bakeground--------------------*/
+.main {
+  background: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.png");
+  width: 1600px;
+  display: flexbox;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* ---------------------- social media--------------------*/
+.main-our-team-media {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px 30px 32px;
+  gap: 8px;
+}
+.main-our-team-media-social {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: #fff;
+  border-radius: 100%;
+}
+.main-our-team-media-social svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  fill: #afb1b8;
+}
+.main-our-team-media-social:hover {
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+}
+.main-our-team-media-social svg:hover {
+  fill: #fff;
+}
+.main-our-team-description li {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+/* ---------------------- regular customers --------------------*/
+.regular-customers {
+  width: 1200px;
+  margin: 0 auto;
+}
+.regular-customers h2 {
+  padding: 94px 0px 50px 0px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: auto;
+  letter-spacing: 3%;
+  text-align: center;
+  margin: 0 auto;
+}
+.regular-customers ul {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.regular-customers-list {
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+.regular-customers ul li svg {
+  width: 106px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--svg-fill-white_bg);
+}
+.regular-customers ul li svg:hover {
+  fill: var(--web-color);
+  border-color: var(--link-color);
+}
+/* ----------------------footer --------------------*/
+.global-footer-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+.find-us {
+  padding: 75px 0px 96px 70px;
+}
+.find-us p {
+  color: #fff;
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 3%;
+}
+.find-us a {
+  color: transparent;
+}
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: #434447;
+  border-radius: 100%;
+}
+.find-us svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  fill: #fff;
+}
+.footer-social-item:hover {
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
+}
+/* ----------------------buton --------------------*/
+.button-list li button:hover,
+.button-list li button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.images-list li:hover,
+.images-list li:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* ----------------------Tema 5 --------------------*/
+.is-hidden {
+  visibility: hidden;
+}
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal:not(.is-hidden) {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-box {
+  background-color: #fff;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal-svg {
+  width: 11px;
+  height: 11px;
+}
+
+.close-modal-button {
+  position: absolute;
+  margin-left: 490px;
+  margin-bottom: 543px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* ----------------- text overlay --------------------- */
+.what-we-do_overlay {
+  position: relative;
+}
+
+.what-we-do-text-overlay {
+  position: absolute;
+  top: 224px;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-text-overlay p {
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-list-images-overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+.main-list-images-overlay-container-text {
+  width: 370px;
+  height: 294px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(120%);
+  transition: transform 200ms ease-in-out;
+}
+.main-list-images:hover .main-list-images-overlay-container-text {
+  transform: translatey(0);
+}
+.main-list-images-overlay-container-text p {
+  width: 80%;
+  padding-left: 25px;
+  padding-top: 45px;
+  padding-bottom: 73px;
+  color: #fff;
+}
+/* ----------------- tranzition --------------------- */
+.main-nav-studio,
+.main-nav-portfolio {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-header-contact a[href^="mailto"],
+.global-header-contact a[href^="tel"] {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.global-header-contact-item {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-buton:hover {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-our-team-media-social svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-our-team-media-social {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.regular-customers-list ul li svg {
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-item {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ----------------- Portfolio --------------------- */
+.button-list li button {
+  transition-property: box-shadow, color background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-list-images {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
