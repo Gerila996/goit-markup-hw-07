@@ -14,11 +14,53 @@
 </head>
 
 <body>
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg class="close-menu-svg-mobile">
+        <use href="./images/icon.svg#burger-menu-close"></use>
+      </svg>
+    </button>
+
+    <ul class="nav-list-mobile">
+      <li>
+        <a class="mobile-menu-navbar" href="./index.html">Studio</a>
+      </li>
+      <li>
+        <a class="mobile-menu-navbar" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li><a class="mobile-menu-navbar" href="#">Contacts</a></li>
+    </ul>
+
+    <ul class="contact-list-mobile">
+      <li class="phone-mobile-class">
+        <a class="mobile-contact-links" href="#">+1 212-772-4150</a>
+      </li>
+      <li class="email-mobile-class">
+        <a class="mobile-contact-links" href="#">info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <ul class="mobile-menu-socials">
+      <li>
+        <a class="mobile-social-links" href="#">Instagram</a><span>|</span>
+      </li>
+      <li>
+        <a class="mobile-social-links" href="#">Twitter</a><span>|</span>
+      </li>
+      <li>
+        <a class="mobile-social-links" href="#">Facebook</a><span>|</span>
+      </li>
+      <li><a class="mobile-social-links" href="#">LinkedIn</a></li>
+    </ul>
+  </div>
   <header class="global-header">
     <div class="global-header-container">
       <a href="./index.html" class="logo-link">
         <p class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></p>
       </a>
+      <svg class="mobile-menu-icon js-open-menu">
+        <use href="./images/icon.svg#burger-menu"></use>
+      </svg>
       <nav class="main-nav">
         <ul class="main-nav-ul">
           <li><a href="./index.html" class="main-nav-studio">Studio</a></li>
@@ -50,13 +92,15 @@
   </header>
   <main>
     <section>
-      <ul class="button-list">
-        <li><button type="button">All</button></li>
-        <li><button type="button">Web-sites</button></li>
-        <li><button type="button">Apps</button></li>
-        <li><button type="button">Design</button></li>
-        <li><button type="button">Marketing</button></li>
-      </ul>
+      <div class="main-button_list-container">
+        <ul class="button-list">
+          <li><button type="button">All</button></li>
+          <li><button type="button">Web-sites</button></li>
+          <li><button type="button">Apps</button></li>
+          <li><button type="button">Design</button></li>
+          <li><button type="button">Marketing</button></li>
+        </ul>
+      </div>
       <ul class="images-list">
         <li class="main-list-images">
           <div class="main-list-images-overlay-container">
@@ -67,7 +111,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img8.jpg" alt="Technoduck" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Technoduck-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Technoduck-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Technoduck-m.jpg" />
+              <img src="./images/Technoduck-d.jpg" alt="Technoduck">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Technoduck</h3>
@@ -83,7 +132,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img9.jpg" alt="Poster New Orlean vs Golden Star" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Poster-New-Orlean_vs_Golden-Star-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Poster-New-Orlean_vs_Golden-Star-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Poster-New-Orlean_vs_Golden-Star-m.jpg" />
+              <img src="./images//Poster-New-Orlean_vs_Golden-Star-d.jpg" alt="Poster New Orlean vs Golden Star">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Poster New Orlean vs Golden Star</h3>
@@ -99,7 +153,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img10.jpg" alt="Seafood Restaurant" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Seafood-Restaurant-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Seafood-Restaurant-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Seafood-Restaurant-m.jpg" />
+              <img src="./images/Seafood-Restaurant-d.jpg" alt="Seafood Restaurant">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Seafood Restaurant</h3>
@@ -115,7 +174,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img11.jpg" alt="Project Prime" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Project-Prime-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Project-Prime-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Project-Prime-m.jpg" />
+              <img src="./images/Project-Prime-d.jpg" alt="Project Prime">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Project Prime</h3>
@@ -131,7 +195,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img12.jpg" alt="Project Boxes" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Project-Boxes-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Project-Boxes-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Project-Boxes-m.jpg" />
+              <img src="./images/Project-Boxes-d.jpg" alt="Project Boxes">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Project Boxes</h3>
@@ -147,7 +216,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img13.jpg" alt="Inspiration has no Borders" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Inspiration-has-no-Borders-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Inspiration-has-no-Borders-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Inspiration-has-no-Borders-m.jpg" />
+              <img src="./images/Inspiration-has-no-Borders-d.jpg" alt="Inspiration has no Borders">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Inspiration has no Borders</h3>
@@ -163,7 +237,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img14.jpg" alt="Limited Edition" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Limited-Edition-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Limited-Edition-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Limited-Edition-m.jpg" />
+              <img src="./images/Limited-Edition-d.jpg" alt="Limited Edition">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Limited Edition</h3>
@@ -179,7 +258,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img15.jpg" alt="Project LAB" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Project-Lab-d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Project-Lab-t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Project-Prime-m.jpg" />
+              <img src="./images/Project-Lab-d.jpg" alt="Project LAB">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Project LAB</h3>
@@ -195,7 +279,12 @@
                 and attacks on competitors' secure servers.
               </p>
             </div>
-            <img src="./images/img16.jpg" alt="Growing Business" width="370">
+            <picture>
+              <source media="(min-width: 1158px)" srcset="./images/Growing-Business_d.jpg" />
+              <source media="(min-width: 768px)" srcset="./images/Growing-Business_t.jpg" />
+              <source media="(min-width: 480px)" srcset="./images/Growing-Business_m.jpg" />
+              <img src="./images/Growing-Business_d.jpg" alt="Growing Business">
+            </picture>
           </div>
           <div class="images-text">
             <h3 class="main-title-images">Growing Business</h3>
@@ -208,63 +297,75 @@
   </main>
   <footer class="global-footer">
     <section class="global-footer-footer">
-      <div class="global-footer-container">
-        <a href="#" class="logo-link">
-          <p class="logo-footer"><span class="logo-web-footer">Web</span><span class="logo-studio-footer">Studio</span>
-          </p>
-        </a>
-        <address>
-          <ul class="address">
-            <li><span class="footer-adress">695 Park Ave, NY 10065, USA</span></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
-          </ul>
-        </address>
-      </div>
-      <div class="find-us">
-        <p>FIND US ON</p>
-        <div class="footer-social">
-          <div class="footer-social-item">
-            <svg class="icon">
-              <use xlink:href="./images/icon.svg#icon-instagram"></use>
-            </svg>
-          </div>
-          <div class="footer-social-item">
-            <svg class="icon">
-              <use xlink:href="./images/icon.svg#icon-twitter"></use>
-            </svg>
-          </div>
-          <div class="footer-social-item">
-            <svg class="icon">
-              <use xlink:href="./images/icon.svg#icon-facebook"></use>
-            </svg>
-          </div>
-          <div class="footer-social-item">
-            <svg class="icon">
-              <use xlink:href="./images/icon.svg#icon-linkedin"></use>
-            </svg>
+      <div class="footer-container-1">
+        <div class="global-footer-container">
+          <a href="#" class="logo-link">
+            <p class="logo-footer"><span class="logo-web-footer">Web</span><span
+                class="logo-studio-footer">Studio</span>
+            </p>
+          </a>
+          <address>
+            <ul class="address">
+              <li><span class="footer-adress">695 Park Ave, NY 10065, USA</span></li>
+              <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="find-us">
+          <p>FIND US ON</p>
+          <div class="footer-social">
+            <div class="footer-social-item">
+              <svg class="icon">
+                <use xlink:href="./images/icon.svg#icon-instagram"></use>
+              </svg>
+            </div>
+            <div class="footer-social-item">
+              <svg class="icon">
+                <use xlink:href="./images/icon.svg#icon-twitter"></use>
+              </svg>
+            </div>
+            <div class="footer-social-item">
+              <svg class="icon">
+                <use xlink:href="./images/icon.svg#icon-facebook"></use>
+              </svg>
+            </div>
+            <div class="footer-social-item">
+              <svg class="icon">
+                <use xlink:href="./images/icon.svg#icon-linkedin"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-      <div class="subscribe">
-        <form action="register.php" method="get" name="email-subcribe" autocomplete="off">
-          <h3 class="subscribe-text">Subscribe to the newsletter</h3>
-          <div class="email-container">
-            <input placeholder="E-mail" class="email-form" type="email" name="newsletter-email" id="newsletter-email"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
-            <div class="form-svg-container">
-              <input class="email-submit" type="submit" value="Subscribe" />
-              <svg>
+      <div class="footer-newsletter">
+        <form action="" method="get" autocomplete="off" class="newsletter-form" name="hero-form">
+          <div class="footer-newsletter-form">
+            <div class="newsletter-label_input">
+              <label for="form-email" class="newsletter-form-label">SUBSCRIBE TO THE NEWSLETTER</label>
+              <div class="newsletter-form-input_container">
+                <input type="email" id="form-email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  class="newsletter-form-input" placeholder="E-mail">
+              </div>
+            </div>
+          </div>
+          <div class="footer-newsletter-button">
+            <input type="submit" class="newsletter-subscribe-button" value="Subscribe">
+            <a href="#">
+              <svg class="newsletter-subscribe-icon">
                 <use href="./images/icon.svg#icon-icon-send"></use>
               </svg>
-            </div>
+            </a>
+            </button>
           </div>
         </form>
       </div>
     </section>
-
   </footer>
-
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
